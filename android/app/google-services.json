@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "619538914232",
+    "project_id": "finambs-79861",
+    "storage_bucket": "finambs-79861.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619538914232:android:492d2604b0d0fcde0fcd4d",
+        "android_client_info": {
+          "package_name": "com.example.estate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619538914232-p0qtujjn7310ou7ertk0qvjjm5g7101f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrqf6Hgpt3JBnC0Orw4C3ivKKPoe6DXx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619538914232-p0qtujjn7310ou7ertk0qvjjm5g7101f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
