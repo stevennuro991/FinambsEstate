@@ -1,12 +1,12 @@
 import 'package:estate/reusable_widgets/reusable_widget.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:estate/screens/home_screen.dart';
+import 'package:estate/screens/main_screen.dart';
 import 'package:estate/screens/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
 class SignInScreen extends StatefulWidget {
-  const SignInScreen({Key? key}) : super(key: key);
+  const SignInScreen({Key key}) : super(key: key);
 
   @override
   _SignInScreenState createState() => _SignInScreenState();
@@ -45,10 +45,8 @@ class _SignInScreenState extends State<SignInScreen> {
                           email: _emailTextController.text,
                           password: _passwordTextController.text)
                       .then((value) {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const HomePage()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => MainScreen()));
                   }).onError((error, stackTrace) {
                     // ignore: avoid_print
                     print("Error ${error.toString()}");

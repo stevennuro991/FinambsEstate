@@ -5,7 +5,7 @@ class UserModel {
   String lastName;
   String phone;
 
-  UserModel({required this.uid, required this.email, required this.firstName, required this.lastName,required this.phone});
+  UserModel({this.uid, this.email, this.firstName, this.lastName, this.phone});
 
   // receiving data from server
   factory UserModel.fromMap(map) {

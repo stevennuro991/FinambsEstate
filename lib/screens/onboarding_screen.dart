@@ -1,16 +1,13 @@
-
 import 'package:estate/screens/signup_screen.dart';
 import "package:flutter/material.dart";
 import 'package:lottie/lottie.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnBoardingScreen extends StatefulWidget {
-  
-  const OnBoardingScreen({Key? key}) : super(key: key);
+  const OnBoardingScreen({Key key}) : super(key: key);
 
   @override
   State<OnBoardingScreen> createState() => _OnBoardingScreenState();
-
 }
 
 class _OnBoardingScreenState extends State<OnBoardingScreen> {
@@ -37,66 +34,59 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
-                children:[
-                  SizedBox(
-                    child: Lottie.asset('assets/images/intro1.json')
+                children: [
+                  SizedBox(child: Lottie.asset('assets/images/intro1.json')),
+                  const Text(
+                    "Browse real estate"
+                    " listings with big"
+                    " beautiful home photos.",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 23,
+                      color: Colors.white,
                     ),
-                    const Text(
-                      "Browse real estate"
-                      " listings with big"
-                      " beautiful home photos.",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 23,
-                        color: Colors.white,
-                      ),
                   )
-                ], 
+                ],
+              ),
             ),
-      
-),
             Container(
               color: Colors.yellow[100],
-               child: Column(
+              child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
-                children:[
-                  SizedBox(
-                    child: Lottie.asset('assets/images/intro2.json')
+                children: [
+                  SizedBox(child: Lottie.asset('assets/images/intro2.json')),
+                  const Text(
+                    "The Best And Finest"
+                    " Apartments And Rooms"
+                    " You Can Think Of",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 22,
+                      color: Colors.blue,
                     ),
-                    const Text(
-                      "Browse real estate"
-                      " listings with big"
-                      " beautiful home photos.",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 22,
-                        color: Colors.blue,
-                      ),
                   )
-                ], 
-            ),
+                ],
+              ),
             ),
             Container(
               color: Colors.green[100],
-               child: Column(
+              child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
-                children:[
-                  SizedBox(
-                    child: Lottie.asset('assets/images/intro3.json')
+                children: [
+                  SizedBox(child: Lottie.asset('assets/images/intro3.json')),
+                  const Text(
+                    "Real estate notification alerts on price reductions"
+                    " and new listings",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 22,
+                      color: Color.fromARGB(255, 106, 143, 20),
                     ),
-                    const Text(
-                      "Real estate notification alerts on price reductions"
-                      " and new listings",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 22,
-                        color: Color.fromARGB(255, 106, 143, 20),
-                      ),
                   )
-                ], 
-            ),
+                ],
+              ),
             ),
           ],
         ),
@@ -118,9 +108,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                           Navigator.push(context,
                               MaterialPageRoute(builder: (context) {
                             return const SignUpScreen();
-                          }
-                          )
-                          );
+                          }));
                         },
                         child: const Text("Done"))
                     : GestureDetector(

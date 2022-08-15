@@ -1,12 +1,12 @@
 import 'package:estate/reusable_widgets/reusable_widget.dart';
 import 'package:estate/screens/login_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:estate/screens/home_screen.dart';
+import 'package:estate/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
 class SignUpScreen extends StatefulWidget {
-  const SignUpScreen({Key? key}) : super(key: key);
+  const SignUpScreen({Key key}) : super(key: key);
 
   @override
   _SignUpScreenState createState() => _SignUpScreenState();
@@ -34,18 +34,17 @@ class _SignUpScreenState extends State<SignUpScreen> {
           color: Colors.blue,
           child: SingleChildScrollView(
               child: Padding(
-            padding: const EdgeInsets.fromLTRB( 50, 50, 50, 0),
+            padding: const EdgeInsets.fromLTRB(50, 50, 50, 0),
             child: Column(
               children: <Widget>[
                 Lottie.asset("assets/images/registerlogo.json"),
-                
                 reusableTextField("Enter Username", Icons.person_outline, false,
                     _userNameTextController),
                 const SizedBox(
                   height: 10,
                 ),
-                reusableTextField("Enter Email Address", Icons.person_outline, false,
-                    _emailTextController),
+                reusableTextField("Enter Email Address", Icons.person_outline,
+                    false, _emailTextController),
                 const SizedBox(
                   height: 10,
                 ),
@@ -63,7 +62,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     // ignore: avoid_print
                     print("Created New Account");
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) =>const HomePage()));
+                        MaterialPageRoute(builder: (context) => MainScreen()));
                   }).onError((error, stackTrace) {
                     // ignore: avoid_print
                     print("Error ${error.toString()}");
@@ -75,6 +74,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           ))),
     );
   }
+
   Row signupOption() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -95,4 +95,3 @@ class _SignUpScreenState extends State<SignUpScreen> {
     );
   }
 }
-
