@@ -124,7 +124,7 @@ class _HouseDetailsState extends State<HouseDetails> {
                           height: 10,
                         ),
                         const Text(
-                          'Biệt Thự',
+                          'Furnished',
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 18,

@@ -278,7 +278,7 @@ class _AddPropertyState extends State<AddProperty> {
                             : Colors.grey)),
                 child: Center(
                   child: Text(
-                    'Khu dân cư',
+                    'Community',
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: selectedColorForPropertyType1 == true

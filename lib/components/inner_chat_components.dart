@@ -2,7 +2,6 @@ import 'package:estate/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:estate/utils/colorscheme.dart';
 
-
 appBarForChatScreen(BuildContext context) {
   return PreferredSize(
       preferredSize: const Size(double.infinity, 100),
@@ -41,7 +40,7 @@ appBarForChatScreen(BuildContext context) {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => MainScreen(page:4),
+                    builder: (context) => MainScreen(page: 4),
                   ),
                 );
               },
@@ -86,7 +85,7 @@ appBarForChatScreen(BuildContext context) {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: const [
-                      Text('John Smith'),
+                      Text('Nnuro'),
                       Text(
                         'online',
                         style: TextStyle(color: Colors.grey),
@@ -130,7 +129,6 @@ appBarForChatScreen(BuildContext context) {
                       borderRadius: BorderRadius.circular(10.0)),
                   child: const Icon(Icons.videocam, color: Colors.grey)),
             ),
-
           ],
         ),
       ));
@@ -146,7 +144,6 @@ userChatBubble(String message) {
           Container(
             height: 40,
             alignment: Alignment.topCenter,
-
             padding: const EdgeInsets.symmetric(horizontal: 18.0),
             decoration: const BoxDecoration(
                 color: Colors.grey,

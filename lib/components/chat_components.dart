@@ -39,16 +39,16 @@ List<String> msg = [
   'Just received your docs!'
 ];
 List<String> personNames = [
-  'John Smith',
-  'Paul Phoenix',
-  'Ricardo John',
-  'John Smith ',
-  'Joe Smith ',
-  'Juan Carlos',
-  'Mike Jones ',
-  'David Smith',
-  'Peter Parker',
-  'Tony Hector'
+  'Steven Nnuro',
+  'Akwasi Nnuro',
+  'Theresa Nnuro',
+  'Kwaku Nnuro',
+  'Steven Nnuro',
+  'Steven Nnuro',
+  'Steven Nnuro',
+  'Steven Nnuro',
+  'Steven Nnuro',
+  'Steven Nnuro'
 ];
 verticalChatList(BuildContext context, int index) {
   return Padding(

@@ -58,11 +58,11 @@ Widget firstHalf(BuildContext context) {
           backgroundImage: AssetImage('assets/images/john.jpg'),
         ),
         const Text(
-          'Xuan Hieu',
+          'Steven Nnuro',
           style: kh1,
         ),
         const Text(
-          'Ha Noi City',
+          'Agent',
           style:  TextStyle(color: Colors.grey),
         ),
         GestureDetector(

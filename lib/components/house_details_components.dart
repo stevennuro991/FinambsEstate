@@ -70,7 +70,7 @@ Stack customCarousal(BuildContext context) {
               height: 10,
             ),
             const Text(
-              'Biệt Thự',
+              'Three Bedroom Apartment',
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 18,
@@ -82,7 +82,7 @@ Stack customCarousal(BuildContext context) {
             Row(
               children: [
                 const Text(
-                  'Thành Phố Hà Nội ',
+                  'Apartment ',
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
@@ -130,12 +130,12 @@ Container firstCompOfDetails(BuildContext context) {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text(
-          'Giá',
+          'Cantoments',
           style: TextStyle(
               color: Colors.black, fontWeight: FontWeight.bold, fontSize: 18),
         ),
         const Text(
-          '\$ 335,900',
+          'GH₵200,000;',
           style: TextStyle(
               color: primaryColor, fontSize: 28, fontWeight: FontWeight.bold),
         ),
@@ -239,11 +239,11 @@ Container secondComponentOfDetails(BuildContext context) {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: const [
         Text(
-          'Mô Tả',
+          'Description',
           style: kh1,
         ),
         Text(
-            'Bán gấp biệt thự song lập mặt phố đường rộng 40m tại Thành Phố Hà Nội.'),
+            'This beautiful two bedroom is located in Cantonments. Property comes fully furnished with a swimming pool,gym and a roof top terrace with a beautiful view.'),
         SizedBox(
           height: 10,
         ),
@@ -324,7 +324,7 @@ Container fourthComponent(BuildContext context) {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text(
-          'Chi Tiết',
+          'Other Amenities',
           style: kh1,
         ),
         const SizedBox(
@@ -407,21 +407,6 @@ Container fifthComponent(BuildContext context) {
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text(
-          'Vị Trí',
-          style: kh1,
-        ),
-        const SizedBox(
-          height: 10,
-        ),
-        Container(
-          height: 200,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10.0),
-            color: Colors.red,
-          ),
-          child: LocationForHouseDetails(),
-        ),
         const SizedBox(
           height: 10,
         ),
@@ -439,7 +424,7 @@ Container sixthComponent(BuildContext context) {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text(
-          'Liên Hệ',
+          'Agent',
           style: kh1,
         ),
         const SizedBox(
@@ -456,13 +441,13 @@ Container sixthComponent(BuildContext context) {
         ),
         const Center(
             child: Text(
-          'Xuân Hiếu',
+          'Steven Nnuro',
           style: TextStyle(
               color: primaryColor, fontWeight: FontWeight.bold, fontSize: 18),
         )),
         const Center(
             child: Text(
-          '0334859652',
+          '0246140578',
           style: TextStyle(color: Colors.black, fontSize: 14),
         )),
         const SizedBox(

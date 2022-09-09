@@ -81,7 +81,7 @@ class _SettingsState extends State<Settings> {
               TextField(
                 cursorColor: primaryColor,
                 decoration: InputDecoration(
-                    hintText: 'Xuan Hieu',
+                    hintText: 'Steven Nuro',
                     focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(color: primaryColor))),
               ),
@@ -92,7 +92,7 @@ class _SettingsState extends State<Settings> {
               TextField(
                 cursorColor: primaryColor,
                 decoration: InputDecoration(
-                    hintText: 'xuanhieu@gmail.com',
+                    hintText: 'stevennuro991@gmail.com',
                     focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(color: primaryColor))),
               ),
@@ -103,7 +103,7 @@ class _SettingsState extends State<Settings> {
               TextField(
                 cursorColor: primaryColor,
                 decoration: InputDecoration(
-                    hintText: 'Ha Noi City',
+                    hintText: 'East Legon',
                     focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(color: primaryColor))),
               ),
@@ -114,7 +114,7 @@ class _SettingsState extends State<Settings> {
               TextField(
                 cursorColor: primaryColor,
                 decoration: InputDecoration(
-                    hintText: '+84 334 859652',
+                    hintText: '+233246140578',
                     focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(color: primaryColor))),
               ),

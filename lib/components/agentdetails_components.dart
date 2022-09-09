@@ -4,7 +4,6 @@ import 'package:estate/utils/colorscheme.dart';
 import 'package:estate/utils/constants.dart';
 import 'package:estate/widgets/heart_container.dart';
 
-
 firstHalfOfAgentDetails(BuildContext context) {
   return Container(
     height: MediaQuery.of(context).size.height * 0.40,
@@ -23,14 +22,14 @@ firstHalfOfAgentDetails(BuildContext context) {
           height: 10,
         ),
         const Text(
-          'John Smith',
+          'Nnuro',
           style: kh1,
         ),
         const SizedBox(
           height: 5,
         ),
         const Text(
-          'New York,USA',
+          'Accra,Ghana',
           style: TextStyle(color: Colors.grey),
         ),
         const SizedBox(
@@ -77,7 +76,7 @@ firstHalfOfAgentDetails(BuildContext context) {
           child: const Center(
             child: Text(
               'CONTACT US',
-              style:  TextStyle(color: Colors.white),
+              style: TextStyle(color: Colors.white),
             ),
           ),
         ),
@@ -132,17 +131,18 @@ introduction() {
                 height: 10,
               )
             : GestureDetector(
-          onTap:(){
-            Navigator.pushNamed(context, 'HouseDetails');
-          },
-              child: Card(
-                  margin: const EdgeInsets.only(bottom: 10.0, left: 8.0, right: 8.0),
+                onTap: () {
+                  Navigator.pushNamed(context, 'HouseDetails');
+                },
+                child: Card(
+                  margin: const EdgeInsets.only(
+                      bottom: 10.0, left: 8.0, right: 8.0),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0)),
                   child: Container(
                     height: 120,
-                    decoration:
-                        BoxDecoration(borderRadius: BorderRadius.circular(20.0)),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20.0)),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
@@ -201,7 +201,6 @@ introduction() {
                                           width: 1,
                                           color: Colors.grey,
                                         ),
-
                                         Text(
                                           ' 5 ',
                                           style: TextStyle(
@@ -214,7 +213,6 @@ introduction() {
                                           width: 1,
                                           color: Colors.grey,
                                         ),
-
                                         Text(
                                           ' 1,767 ',
                                           style: TextStyle(
@@ -240,11 +238,10 @@ introduction() {
                                         ),
                                         const Text(
                                           ' House for Sale',
-                                          style:  TextStyle(fontSize: 12),
+                                          style: TextStyle(fontSize: 12),
                                         ),
-
                                         const Spacer(),
-                                       HeartContainer(index),
+                                        HeartContainer(index),
                                       ],
                                     ),
                                   )
@@ -255,7 +252,7 @@ introduction() {
                     ),
                   ),
                 ),
-            );
+              );
       });
 }
 
@@ -293,7 +290,7 @@ reusableCard(String price, address, img) {
                     const Text(
                       'HOME',
                       style:
-                           TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                          TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(
                       height: 3,
@@ -362,12 +359,12 @@ Container contactInformation(TabController tabController) {
       child: Column(
         children: [
           customListTile(
-              Icons.place, 'Address', '000 Susan Apartemnet,New York, USA'),
+              Icons.place, 'Address', 'Accra,Ghana'),
           const SizedBox(
             height: 15,
           ),
           customListTile(Icons.phone_in_talk, 'Phone Number',
-              '+123 456 789 | +789 234 567 '),
+              '+233 246140578 | +233 246140578 '),
           const SizedBox(
             height: 15,
           ),

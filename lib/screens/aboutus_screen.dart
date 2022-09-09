@@ -51,7 +51,7 @@ class AboutUs extends StatelessWidget {
                     )),
                   ),
                   const Text(
-                    ' 2021 BDS',
+                    ' 2022 BDS',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ],
@@ -60,7 +60,7 @@ class AboutUs extends StatelessWidget {
                 height: 10,
               ),
               const Text(
-                'www.bds.com',
+                'FlexSolutions',
                 style: const TextStyle(fontWeight: FontWeight.w500),
               ),
               const SizedBox(

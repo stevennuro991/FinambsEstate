@@ -14,7 +14,7 @@ textFieldWithFilter({BuildContext context, Function callback}) {
         Expanded(
           child: GestureDetector(
             onTap: () {
-              Navigator.pushNamed(context, 'SearchProperty');
+              Navigator.pushNamed(context, 'Search Property');
             },
             child: Row(
               children: const [
@@ -26,7 +26,7 @@ textFieldWithFilter({BuildContext context, Function callback}) {
                   color: primaryColor,
                 ),
                 Text(
-                  'Tìm kiếm',
+                  'Search',
                   style: TextStyle(color: Colors.grey),
                 )
               ],

@@ -26,7 +26,7 @@ class Home extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Navigator.pushNamed(context, 'SeeAllScreen');
+                      Navigator.pushNamed(context, 'See All Screen');
                     },
                     child: const Text(
                       'All',
@@ -54,7 +54,7 @@ class Home extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Navigator.pushNamed(context, 'SeeAllScreen');
+                      Navigator.pushNamed(context, 'See All Screen');
                     },
                     child: Text(
                       'All',

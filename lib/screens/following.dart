@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:estate/utils/colorscheme.dart';
 
-
 class Following extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
-        appBar: AppBar(iconTheme: const IconThemeData(color:  const Color(0xff979696)),
+        appBar: AppBar(
+          iconTheme: const IconThemeData(color: const Color(0xff979696)),
           backgroundColor: Colors.white,
           elevation: 2,
-          title: const Text('Following',style: const TextStyle(color: Colors.black),),
+          title: const Text(
+            'Following',
+            style: const TextStyle(color: Colors.black),
+          ),
         ),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -28,22 +31,16 @@ class Following extends StatelessWidget {
     );
   }
 
-
   ListView followingList() {
     List<String> images = [
-      'assets/images/person1.jpg',
-      'assets/images/person2.jpeg',
-      'assets/images/person3.png',
-      'assets/images/person4.jpg',
-      'assets/images/person5.png',
-      'assets/images/person6.jpeg',
-      'assets/images/person7.jpg',
-      'assets/images/person8.jpg',
-      'assets/images/person9.jpg',
+      
       'assets/images/person10.jpg',
     ];
-    List<String> personNames=['Aiden Ken','Paul Phoenix','Ricardo John','John Smith ','Joe Smith ','Juan Carlos','Mike Jones ','David Smith','Peter Parker','Tony Hector'];
-
+    List<String> personNames = [
+      
+      'Nnuro ',
+      
+    ];
 
     return ListView.builder(
         itemCount: images.length,
@@ -51,7 +48,6 @@ class Following extends StatelessWidget {
         itemBuilder: (context, index) {
           return Column(
             children: [
-
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
@@ -91,7 +87,8 @@ class Following extends StatelessWidget {
                     ),
                     Text(
                       personNames[index],
-                      style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      style: const TextStyle(
+                          fontSize: 16, fontWeight: FontWeight.bold),
                     ),
                     const Spacer(),
                     Container(
@@ -102,9 +99,9 @@ class Following extends StatelessWidget {
                           border: Border.all(color: primaryColor)),
                       child: const Center(
                           child: const Text(
-                            'UNFOLLOW',
-                            style: TextStyle(color: primaryColor),
-                          )),
+                        'UNFOLLOW',
+                        style: TextStyle(color: primaryColor),
+                      )),
                     )
                   ],
                 ),

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:estate/utils/colorscheme.dart';
 
-
-
 ListView followersList() {
   List<String> images = [
     'assets/images/person1.jpg',
@@ -16,8 +14,18 @@ ListView followersList() {
     'assets/images/person9.jpg',
     'assets/images/person10.jpg',
   ];
-  List<String> personNames=['Aiden Ken','Paul Phoenix','Ricardo John','John Smith ','Joe Smith ','Juan Carlos','Mike Jones ','David Smith','Peter Parker','Tony Hector'];
-
+  List<String> personNames = [
+    'Aiden Ken',
+    'Paul Phoenix',
+    'Ricardo John',
+    'Nnuro ',
+    'Joe Smith ',
+    'Juan Carlos',
+    'Mike Jones ',
+    'David Smith',
+    'Peter Parker',
+    'Tony Hector'
+  ];
 
   return ListView.builder(
       itemCount: images.length,
@@ -25,7 +33,6 @@ ListView followersList() {
       itemBuilder: (context, index) {
         return Column(
           children: [
-
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
@@ -51,7 +58,7 @@ ListView followersList() {
                           child: CircleAvatar(
                             maxRadius: 6,
                             backgroundColor: Colors.white,
-                            child:  CircleAvatar(
+                            child: CircleAvatar(
                               backgroundColor: Color(0xff51ce6a),
                               maxRadius: 5,
                             ),
@@ -63,7 +70,8 @@ ListView followersList() {
                   ),
                   Text(
                     personNames[index],
-                    style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                    style: const TextStyle(
+                        fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                   const Spacer(),
                   Container(
@@ -73,10 +81,10 @@ ListView followersList() {
                         borderRadius: BorderRadius.circular(30.0),
                         border: Border.all(color: primaryColor)),
                     child: const Center(
-                        child:  Text(
-                          'FOLLOW',
-                          style: TextStyle(color: primaryColor),
-                        )),
+                        child: Text(
+                      'FOLLOW',
+                      style: TextStyle(color: primaryColor),
+                    )),
                   )
                 ],
               ),

@@ -53,7 +53,7 @@ class _SearchPropertyBodyState extends State<SearchPropertyBody> {
             child: Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                'Loại bất động sản',
+                'Search For A Particular Property',
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
               ),
             ),
@@ -122,7 +122,7 @@ class _SearchPropertyBodyState extends State<SearchPropertyBody> {
                             : Colors.grey)),
                 child: Center(
                   child: Text(
-                    'Khu dân cư',
+                    'One Bedroom',
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: selectedProperty[0] == true
@@ -159,7 +159,7 @@ class _SearchPropertyBodyState extends State<SearchPropertyBody> {
                             : Colors.grey)),
                 child: Center(
                   child: Text(
-                    'Thành phố',
+                    'Two Bedroom',
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: selectedProperty[1] == true
@@ -196,7 +196,7 @@ class _SearchPropertyBodyState extends State<SearchPropertyBody> {
                             ? primaryColor
                             : Colors.grey)),
                 child: Center(
-                  child: Text('Công nghiệp',
+                  child: Text('Three Bedroom',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: selectedProperty[2] == true
